@@ -1,0 +1,136 @@
+/*** --- GENERAL --- ***/
+
+body{
+    margin:0;
+    height: 100%;
+    background: url(background.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+h2{
+    display: none;
+}
+
+
+
+/*** --- HEADER --- ***/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A7A7A7;
+    align-items: center;
+    height: 61px;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.rs {
+    margin-right: 10px;
+}
+
+
+
+/*** --- FORMULAIRE --- ***/
+
+.button {
+    background-image: url(boutonEnvoyer.png);
+    height:33px;
+    width: 116px;
+}
+
+.main {
+    background: url(background.jpg) no-repeat center fixed;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+form{
+    background-color : rgba(250,250,250,0.5);
+    padding : 30px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-shadow:  6px 6px 6px rgba(0,0,0,.5);
+    transform: translate(0,90%);
+}
+
+.input{
+    display: flex;
+}
+
+.msg
+{
+    height:138px;
+}
+
+.form, .msg {
+    background-color: #A7A7A7;
+    margin-bottom: 14px;  
+    width:100%;
+    box-shadow: 0 0 0;
+    outline: none;
+}
+
+input {
+    height:33px;
+    width:169px;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+    padding-left: 10px;
+}
+
+.input > div {
+    width: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.button {
+    margin-right: 15px;
+}
+
+
+
+/*** --- MEDIA QUERIES --- ***/
+
+@media (max-width:750px){
+    form {
+        left:0;
+        right:0;
+    }
+}
+
+@media (max-width:325px){
+    form{
+        top:0;
+        height:514px;
+    }
+    
+    .input {
+        margin: 20px;
+        display: block;
+    }
+    
+    .input > div {
+        width: auto;
+    } 
+    
+    h1{
+        display: none;
+    }
+    
+    h2 {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+}
